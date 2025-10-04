@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <style>
+        /* This message will show if someone has JavaScript disabled or if the redirect takes a moment */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .message {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="message">
+        <p>Redirecting you, please wait...</p>
+    </div>
+
+    <script>
+        // --- Customize this section ---
+
+        // Add as many links as you want here
+        const urls = [
+            "https://www.google.com",
+            "https://www.wikipedia.org",
+            "https://www.github.com",
+            "https://www.youtube.com",
+            "https://www.stackoverflow.com"
+        ];
+
+        // --- No need to change the code below this ---
+
+        // Select a random URL from the array
+        const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+
+        // Redirect the user as soon as the page loads
+        window.location.href = randomUrl;
+    </script>
+
+</body>
+</html>
